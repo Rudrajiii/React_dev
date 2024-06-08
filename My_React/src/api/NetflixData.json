@@ -1,0 +1,52 @@
+[
+    {
+        "name": "Stranger Things",
+        "id": 1,
+        "img_url": "https://tse1.mm.bing.net/th?id=OIP.mNswZTUrypnu65lR622KAwAAAA&pid=Api&P=0&h=180",
+        "rating": 8.7,
+        "description": "A group of kids in the 1980s face supernatural forces in their small town.",
+        "cast": ["Winona Ryder", "David Harbour", "Finn Wolfhard"],
+        "genre": ["Drama", "Fantasy", "Horror"],
+        "watch_url": "https://netflix.com/stranger_things"
+    },
+    {
+        "name": "The Witcher",
+        "id": 2,
+        "img_url": "https://wallpapercave.com/wp/wp1854671.jpg",
+        "rating": 8.2,
+        "description": "Geralt of Rivia, a mutated monster hunter, struggles to find his place in a world where people often prove more wicked than beasts.",
+        "cast": ["Henry Cavill", "Freya Allan", "Anya Chalotra"],
+        "genre": ["Action", "Adventure", "Fantasy"],
+        "watch_url": "https://netflix.com/the_witcher"
+    },
+    {
+        "name": "Money Heist",
+        "id": 3,
+        "img_url": "https://tse1.mm.bing.net/th?id=OIP.hZWnF_2KHVPKVd0H8VNJDAHaDt&pid=Api&P=0&h=180",
+        "rating": 8.3,
+        "description": "A criminal mastermind who goes by 'The Professor' has a plan to pull off the biggest heist in recorded history.",
+        "cast": ["Úrsula Corberó", "Álvaro Morte", "Itziar Ituño"],
+        "genre": ["Action", "Crime", "Drama"],
+        "watch_url": "https://netflix.com/money_heist"
+    },
+    {
+        "name": "Bridgerton",
+        "id": 4,
+        "img_url": "https://tse2.mm.bing.net/th?id=OIP.zk9Xbuxn67vTiWPxO3AL8QHaDt&pid=Api&P=0&h=180",
+        "rating": 7.3,
+        "description": "Follows the lives of the Bridgerton family as they navigate London's high society in the 19th century.",
+        "cast": ["Phoebe Dynevor", "Regé-Jean Page", "Nicola Coughlan"],
+        "genre": ["Drama", "Romance"],
+        "watch_url": "https://netflix.com/bridgerton"
+    },
+    {
+        "name": "The Crown",
+        "id": 5,
+        "img_url": "https://tse2.mm.bing.net/th?id=OIP.NZ1h7tD_ZKymtYF0T_SG7gHaEK&pid=Api&P=0&h=180g",
+        "rating": 8.6,
+        "description": "The story of Queen Elizabeth II's reign and the events that shaped the second half of the 20th century.",
+        "cast": ["Olivia Colman", "Tobias Menzies", "Helena Bonham Carter"],
+        "genre": ["Biography", "Drama", "History"],
+        "watch_url": "https://netflix.com/the_crown"
+    }
+]
