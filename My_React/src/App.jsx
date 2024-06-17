@@ -1,11 +1,12 @@
 import React from "react";
 import { GojoComponent } from "./components/GojoComponent";
 
+
 export function App() {
   return (
-    <React.Fragment>
+    <section className="container">
       <GojoComponent />
-    </React.Fragment>
+    </section>
   );
 }
 
