@@ -5,6 +5,7 @@ import './index.css'
 import { ProfileCards } from "./components/ProfileCards";  
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <ProfileCards/>
   </React.StrictMode>
 )
