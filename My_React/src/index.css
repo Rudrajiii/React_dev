@@ -26,9 +26,8 @@ body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
 }
 
 h1 {
@@ -100,17 +99,19 @@ img{
 .superhit{
   background: #7dcea0;
   color: black;
-  width: 28%;
+  width: 32%;
+  aspect-ratio: 1/1;
   padding: .6rem;
-  border-radius: .7rem;
+  border-radius: 1rem;
   text-align: center;
 
 }
 .average{
   background: #f7dc6f;
   color: black;
-  width: 28%;
+  width: 32%;
+  aspect-ratio: 1/1;
   padding: .6rem;
-  border-radius: .7rem;
+  border-radius: 1rem;
   text-align: center;
 }

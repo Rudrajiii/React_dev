@@ -5,9 +5,9 @@ import { EventHandler } from "./components/eventHandling";
 
 export function App() {
   return (
-    <section className="container">
+    <section className="container w-full">
       <GojoComponent />
-      <EventHandler/>
+      {/* <EventHandler/> */}
     </section>
   );
 }

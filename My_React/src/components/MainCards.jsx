@@ -15,14 +15,15 @@ export const MainCards = (props) => {
         cursor: "pointer",
         transition: "border-color 0.25s"
   });
+  
     return (
-        <li key={id} className="card">
+        <li key={id} className="card bg-slate-800 p-4">
             <div className="image">
-              <img src={img_url} alt={name} width="40%" height="40%" />
+              <img src={img_url} alt={name}/>
             </div>
-            <div className="content flex flex-col p-2 gap-2">
-              <h1 className='font-md'>Series : {name}</h1>
-              <h3 className={conditionalRating}>Rating : {rating} ⭐</h3>
+            <div className="content flex flex-col p-2 gap-4 font-mono">
+              <h1 className='font-md font-serif'>Series : {name}</h1>
+              <h3 >Rating : <span className={`${conditionalRating}`}> {rating} </span></h3>
               <h3>Name : {name}</h3>
               <h3>Cast : {cast}</h3>
               <p>Content : {description}</p>
