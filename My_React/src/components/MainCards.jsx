@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 export const MainCards = (props) => {
-    const { item } = props;
-    const { id , img_url , name , cast , rating , description , genre , watch_url } = item;
+    const { item1 } = props;
+    const { id , img_url , name , cast , rating , description , genre , watch_url } = item1;
     const conditionalRating = rating >= 8.5 ? "superhit":"average";      
     const StyledButton = styled.button({
         borderRadius: "8px",

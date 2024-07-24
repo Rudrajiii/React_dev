@@ -5,7 +5,7 @@ export const GojoComponent = () => {
     <ul className="card-container m-4">
       {seriesData.map((item) => {
         return (
-            <MainCards key={item.id} item={item}/>
+            <MainCards key={item.id} item1={item}/>
         );
       })}
     </ul>
