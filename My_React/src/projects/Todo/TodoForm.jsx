@@ -1,14 +1,14 @@
 import { useState } from "react";
 export const TodoForm = ({onAddTodo}) => {
-  const [initValue, upDatedValue] = useState("");
+  const [initValue, upDatedValue] = useState({});
   const handleClickEvent = (value) => {
-    upDatedValue(value);
+    upDatedValue({id:value , content:value , checked:false});
   };
 
   const handleFormSubmit = (event) => {
     event.preventDefault();
     onAddTodo(initValue);
-    upDatedValue("");
+    upDatedValue({id:'' , content:'' , checked:false});
   }
     return (
         <section className="w-full flex  justify-center">
@@ -20,7 +20,7 @@ export const TodoForm = ({onAddTodo}) => {
                 name=""
                 id=""
                 placeholder="Enter The Task"
-                value={initValue}
+                value={initValue.content || ""}
                 onChange={(event) => handleClickEvent(event.target.value)}
               />
               <button className="w-[6rem] bg-green-400 p-2 rounded-md text-md">

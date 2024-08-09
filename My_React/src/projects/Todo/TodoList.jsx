@@ -1,17 +1,17 @@
 import { MdDone } from "react-icons/md";
 import { RiDeleteBin6Fill } from "react-icons/ri";
 
-export const TodoList = ({key , data , onHandleDeleteTodo}) => {
+export const TodoList = ({ data , checkedTodo, onhandleDoneTodo , onHandleDeleteTodo}) => {
+    const conditionCheck = checkedTodo ? "line-through" : "";
     return (
         <li
-            key={key}
             className="relative shadow-md p-3 rounded-lg w-[30rem] justify-between border flex"
         >
-            <span>{data}</span>
+            <span className={`${conditionCheck}`}>{data}</span>
             <div className="w-[6rem] flex justify-between text-xl">
                 <button
-                    onClick={() => handleDoneTodo(data)}
-                    className="text-green-500"
+                    onClick={() => onhandleDoneTodo(data)}
+                    className ="text-green-500"
                 >
                     <MdDone />
                 </button>
