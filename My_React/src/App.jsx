@@ -5,6 +5,7 @@ import {State} from "./components/StateManagement"
 import {LiftStateUp} from "./components/LiftStateUp"
 import { StateHooks } from "./components/StateHooks";
 import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
+import { Todo } from "./projects/Todo/Todo";
 
 export function App() {
   return (
@@ -14,8 +15,8 @@ export function App() {
       <StateHooks/> */}
       {/* <State/> */}
       {/* <EventHandler/> */}
-      
-      <ToggleSwitch/>
+      <Todo/>
+      {/* <ToggleSwitch/> */}
     </section>
   );
 }

@@ -10,7 +10,6 @@ export const LiftStateUp = () => {
   );
 }
 const CoreComponent = ({userInput, setInterval}) => {
-  
   return (
     <>
       <input type="text" placeholder="enter anything" value={userInput} onChange={(e)=>setInterval(e.target.value)}/>
