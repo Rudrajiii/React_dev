@@ -1,56 +1,48 @@
-import { useState } from "react"
+import { useState } from "react";
+import { TodoForm } from "./TodoForm";
+import { TodoList } from "./TodoList";
+import { TodoDate } from "./TodoDate";
 
 export const Todo = () => {
-    const [initValue , upDatedValue] = useState("");
-    const [inputTask , setTask] = useState([]);
-    const handleClickEvent = (value) => {
-        upDatedValue(value);
-    }
-    const handleFormSubmit = (event) => {
-        event.preventDefault();
-        if(!initValue) return;
-        
-        if(inputTask.includes(initValue)){
+    const [initValue, upDatedValue] = useState("");
+    const [inputTask, setTask] = useState([]);
+
+    const handleFormSubmit = (initValue) => {
+
+        if (!initValue) return;
+
+        if (inputTask.includes(initValue)) {
             upDatedValue("");
             return;
-        };
+        }
 
-        setTask((prevTask) => [...prevTask , initValue]);
+        setTask((prevTask) => [...prevTask, initValue]);
+    };
+    const handleDelTodo = (curTask) => {
+        console.log(curTask);
+        console.log(inputTask);
+        let finalArr = inputTask.filter((item) => item !== curTask);
+        setTask(finalArr);
+    };
+    const handleDoneTodo = () => { };
 
-        upDatedValue("");
-    }
     return (
         <div className="w-screen h-screen flex justify-center overflow-x-hidden">
             <div className="w-[50%] h-[50%] p-4 flex items-center flex-col gap-4">
-                <header className="font-serif text-4xl font-medium">Todo List</header>
-                {/* DateTime */}
-                <section className="w-full flex  justify-center">
-                    <form  className="relative"
-                        onSubmit={handleFormSubmit}>
-                        <div className="flex gap-2 relative w-[22rem] max-w-96 rounded-md">
-                            <input className="p-2 w-[15rem] border-2 rounded-md" type="text"
-                            name=""
-                            id="" 
-                            placeholder="Enter The Task"
-                            value={initValue}
-                            onChange={(event) => handleClickEvent(event.target.value)}/>
-                            <button className="w-[6rem] bg-green-400 p-2 rounded-md text-md">Add Task</button>
-                        </div>
-                    </form>
-                </section>
+                <header className="w-full flex items-center flex-col">
+                    <h1 className="font-serif text-4xl font-medium">Todo List</h1>
+                    {/* DateTime */}
+                    <TodoDate />
+                </header>
+                < TodoForm onAddTodo={handleFormSubmit} />
                 <section className="w-full flex flex-col items-center gap-2">
-                    {
-                        inputTask.map((curTask , index) => {
-                            return(
-                                <li key={index} className="shadow-md p-3 rounded-lg w-[30rem] border flex">
-                                    <span>{curTask}</span>
-                                </li>
-                            )
-                        })
-                    }
+                    {inputTask.map((curTask, index) => {
+                        return <TodoList key={index}
+                            data={curTask}
+                            onHandleDeleteTodo={handleDelTodo} />
+                    })}
                 </section>
             </div>
         </div>
-    )
-}
-
+    );
+};
