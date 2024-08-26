@@ -6,6 +6,7 @@ import {LiftStateUp} from "./components/LiftStateUp"
 import { StateHooks } from "./components/StateHooks";
 import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
 import { Todo } from "./projects/Todo/Todo";
+import { ShortCircuit } from "./components/hooks/ShortCircuit";
 
 export function App() {
   return (
@@ -15,7 +16,8 @@ export function App() {
       <StateHooks/> */}
       {/* <State/> */}
       {/* <EventHandler/> */}
-      <Todo/>
+      {/* <Todo/> */}
+      <ShortCircuit/>  
       {/* <ToggleSwitch/> */}
     </section>
   );
