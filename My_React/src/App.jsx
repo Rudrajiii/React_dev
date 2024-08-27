@@ -6,18 +6,20 @@ import {LiftStateUp} from "./components/LiftStateUp"
 import { StateHooks } from "./components/StateHooks";
 import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
 import { Todo } from "./projects/Todo/Todo";
-import { ShortCircuit } from "./components/hooks/ShortCircuit";
+import { ShortCircuit } from "./components/hooks/Short_Circuit/ShortCircuit";
+import { Count } from "./components/hooks/count/Count";
 
 export function App() {
   return (
-    <section className="container w-full">
+    <section className="w-full">
       {/* <GojoComponent /> */}
       {/* <LiftStateUp/>
       <StateHooks/> */}
       {/* <State/> */}
       {/* <EventHandler/> */}
       {/* <Todo/> */}
-      <ShortCircuit/>  
+      {/* <ShortCircuit/>   */}
+      <Count/>
       {/* <ToggleSwitch/> */}
     </section>
   );
