@@ -8,6 +8,8 @@ import { ToggleSwitch } from "./projects/ToggleSwitch/ToggleSwitch";
 import { Todo } from "./projects/Todo/Todo";
 import { ShortCircuit } from "./components/hooks/Short_Circuit/ShortCircuit";
 import { Count } from "./components/hooks/count/Count";
+import { SignUP } from "./components/login/SignUP";
+import { LoginForm } from "./components/login/LoginForm";
 
 export function App() {
   return (
@@ -19,7 +21,9 @@ export function App() {
       {/* <EventHandler/> */}
       {/* <Todo/> */}
       {/* <ShortCircuit/>   */}
-      <Count/>
+      {/* <Count/> */}
+      {/* <SignUP/> */}
+      <LoginForm/>
       {/* <ToggleSwitch/> */}
     </section>
   );
